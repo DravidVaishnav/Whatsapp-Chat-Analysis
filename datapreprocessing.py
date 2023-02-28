@@ -18,9 +18,6 @@ def date_convert(date_string):
 
 def getdata(data):
 
-    # reading text data
-    # file = open(filename,'r',encoding='utf-8')
-    # data = file.read()
 
     # regular expression pattern for splitting text data
     pattern = '\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s\w{2}\s-\s'
@@ -37,7 +34,7 @@ def getdata(data):
     df = pd.DataFrame({'user_message':messages,'datetime':dates})
     df['datetime'] = df['datetime'].apply(date_convert)
     df['datetime'] = pd.to_datetime(df['datetime'], format='%Y-%m-%d %H:%M:%S')
-    # df.drop('date',axis=1,inplace=True)
+ 
 
     # creating new columns from datetime column
     df['date'] = df['datetime'].dt.date
@@ -73,9 +70,20 @@ def getdata(data):
     cols = ['user', 'message', 'date', 'year', 'month_num', 'month', 'day_num', 'day','hour', 'minute']
     df = df[cols]
 
+    period = []
+    for hour in df[['day', 'hour']]['hour']:
+        if hour == 23:
+            period.append(str(hour) + "-" + str('00'))
+        elif hour == 0:
+            period.append(str('00') + "-" + str(hour + 1))
+        else:
+            period.append(str(hour) + "-" + str(hour + 1))
+
+    df['period'] = period
+
     return df
 
-# print(getdata('WhatsApp Chat with 5.txt'))
+
 
 
 
