@@ -7,6 +7,7 @@
 1. [Description](#description)
 1. [Screenshots](#screenshots)
 1. [Project structure](#project-structure)
+1. [Walkthrough](#walkthrough)
 1. [Application](#application)
 
 
