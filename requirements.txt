@@ -6,3 +6,4 @@ urlextract==1.8.0
 wordcloud==1.8.2.2
 emoji==2.2.0
 streamlit==1.20.0
+IPython==8.2.0
