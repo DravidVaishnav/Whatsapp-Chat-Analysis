@@ -37,7 +37,7 @@ user.
   
 ```
 ## Walkthrough
-- to get chat data follow: whatsapp -> chat -> options -> More -> Export chat -> Without media
+- to get chat data follow: `whatsapp` -> `chat` -> `options` -> `More` -> `Export chat` -> `Without media`
 - access [App](https://dravidvaishnav-whatsapp-chat-analysis-app-wzlv0u.streamlit.app/) and select chat file
 - in show analysis wrt select the user, for overall group select overall 
 
