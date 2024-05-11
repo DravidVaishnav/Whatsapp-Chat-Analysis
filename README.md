@@ -44,4 +44,4 @@ user.
 
 ## Application
 
-[Website](https://dravidvaishnav-whatsapp-chat-analysis.streamlit.app/)
+[whatsapp-chat-analysis](https://dravid-whatsapp-chat-analysis.streamlit.app/)
