@@ -44,4 +44,6 @@ user.
 
 ## Application
 
+open below link in incognito tab to access application
+
 [whatsapp-chat-analysis](https://dravid-whatsapp-chat-analysis.streamlit.app/)
